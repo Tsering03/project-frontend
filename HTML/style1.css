@@ -9,7 +9,7 @@ header{
     font-family:  sans-serif;
 }
 body{
-    background: #e5e7ed;
+    background: #96a138c6;
 }
 .container{
     display: flex;
@@ -18,7 +18,7 @@ body{
     min-height: 90vh;
 }
 .box{
-    background: #fdfdfd;
+    background: #c5d178;
     display: flex;
 flex-direction: column;
 padding: 25px;
@@ -41,7 +41,7 @@ box-shadow: 0 0 128px 0  rgb(0,0,0,0.1),;
     width: 100%;
     font-size: 16px;
     padding: 0 10px;
-    border: 1px solid#ccc;
+    border: 1px solid#e5e3e3;
     outline: none;
     border-radius: 5px;
 }
@@ -52,9 +52,9 @@ box-shadow: 0 0 128px 0  rgb(0,0,0,0.1),;
 }
 .btn{
     height: 35px;
-    background:rgba(128, 3, 120, 0.808);
-    border-radius: 5px;
-    color: #fff;
+    background:rgba(64, 47, 12, 0.808);
+    border-radius: 50px;
+    color: #f1eaea;
     font-size: 15px;
     cursor: pointer;
     transition: all .3s;

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Details</title>
+    <link rel="stylesheet" href="book.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">ReadReels</div>
+            <div class="search">
+                <input type="text" placeholder="search">
+                <button type="submit">Search</button>
+            </div>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="lsub">
+                <img  class="nam"    src="book.jpg" alt="Book Image"><br>
+                <button type="submit"><strong>Want to Read</strong></button>
+                <br>
+                <div class="rating">
+                    <input type="radio" name="rating1" id="star1" value="5">
+                    <label for="star1" class="star">&#9733;</label>
+                    <input type="radio" name="rating1" id="star2" value="4">
+                    <label for="star2" class="star">&#9733;</label>
+                    <input type="radio" name="rating1" id="star3" value="3">
+                    <label for="star3" class="star">&#9733;</label>
+                    <input type="radio" name="rating1" id="star4" value="2">
+                    <label for="star4" class="star">&#9733;</label>
+                    <input type="radio" name="rating1" id="star5" value="1">
+                    <label for="star5" class="star">&#9733;</label>
+                    <h1>Rate this Book</h1>
+                </div>
+            </div>
+            <div class="par">
+                <h3>Book Title</h3><br>
+                <p class="nam">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique velit quam nihil cumque eos suscipit mollitia reprehenderit natus perferendis tenetur. Autem architecto nesciunt adipisci ducimus, iusto et mollitia maxime dolorem.</p>
+                <div class="rating">
+                    <input type="radio" name="rating2" id="star1-2" value="5">
+                    <label for="star1-2" class="star">&#9733;</label>
+                    <input type="radio" name="rating2" id="star2-2" value="4">
+                    <label for="star2-2" class="star">&#9733;</label>
+                    <input type="radio" name="rating2" id="star3-2" value="3">
+                    <label for="star3-2" class="star">&#9733;</label>
+                    <input type="radio" name="rating2" id="star4-2" value="2">
+                    <label for="star4-2" class="star">&#9733;</label>
+                    <input type="radio" name="rating2" id="star5-2" value="1">
+                    <label for="star5-2" class="star">&#9733;</label>
+                </div>
+                <hr>
+                <br><br><br>
+                <div style="width: 100%,  margin: auto">
+                    <canvas id="reviewChart"></canvas>
+                    <script>
+                        const y = document.getElementById('reviewChart').getContext('2d');
+                        const data = {
+                            labels: ['5 stars', '4 stars', '3 stars', '2 stars', '1 star'],
+                            datasets: [{
+                                label: 'Number of Ratings',
+                                data: [3, 3305, 2160, 846, 549],
+                                backgroundColor: 'rgba(54, 164, 235, 0.6)',
+                                borderWidth: 1,
+                                bordercolor:'rgb(0,0,0,0)'
+                            }]
+                        };
+                        const config = {
+                            type: 'bar',
+                            data: data,
+                            options: {
+                                indexAxis: 'y',
+                                scales: {
+                                    x: {
+                                        beginAtZero: true,
+                                        title: {
+                                            display: true,
+                                            text: 'Number of Ratings',
+                                        }
+                                    }
+                                }
+                            },
+                            plugins: {
+                                tooltip: {
+                                    callbacks: {
+                                        label: function(context) {
+                                            const per = [32, 31, 22, 8, 5];
+                                            const index = context.dataIndex;
+                                            return `${context.dataset.label}: ${context.raw} (${per[index]}%)`;
+                                        }
+                                    }
+                                }
+                            }
+                        };
+                        const reviewChart = new Chart(y, config);
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

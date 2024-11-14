@@ -1,0 +1,55 @@
+*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+.nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.main {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.book-cover {
+    max-width: 200px;
+}
+.rating {
+    margin: 10px 0;
+}
+.rating input {
+    display: none;
+}
+.rating label {
+    font-size: 20px;
+    color: #FFD700; /* Gold color for stars */
+    cursor: pointer;
+}
+.submit-rating {
+    margin-top: 10px;
+}
+canvas {
+    margin: 20px 0;
+}
