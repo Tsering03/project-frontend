@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+   background-color: cornflowerblue;
+    background-image: -o-linear-gradient(url(WhatsApp Image 2024-08-12 at 17.24.15_15d16f9b.jpg));
+}
+.about{
+    width: 100vh;
+    height:100vh;
+    color:black;
+    padding-top:6%;
+    padding-left: 25%;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h1{
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    display: flex;
+}
+footer{
+    color: azure;
+    background-color: black;
+    padding-bottom:0%;
+    justify-content: center;
+    align-items: center;
+display: flex;
+}

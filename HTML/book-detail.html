@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Details</title>
+    <link rel="stylesheet" href="book.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<section>
+
+    <div class="container">
+        <div class="nav">
+            <div class="logo">ReadReels</div>
+            <div class="search">
+                <input type="text" placeholder="search">
+                <button type="submit">Search</button>
+            </div>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main">
+          <div class="lmain">
+            <div class="lsub">
+                
+            <img  class="nam"  src="book.jpg" alt="Book Image"><br><br>
+            <button type="submit"><strong>Want to Read</strong></button>
+            <br>
+            <div class="rating">
+                <input type="radio" name="rating1" id="star1" value="5">
+                <label for="star1" class="star">&#9733;</label>
+                <input type="radio" name="rating1" id="star2" value="4">
+                <label for="star2" class="star">&#9733;</label>
+                <input type="radio" name="rating1" id="star3" value="3">
+                <label for="star3" class="star">&#9733;</label>
+                <input type="radio" name="rating1" id="star4" value="2">
+                <label for="star4" class="star">&#9733;</label>
+                <input type="radio" name="rating1" id="star5" value="1">
+                <label for="star5" class="star">&#9733;</label>
+            </div><h1>Rate this Book</h1>
+        </div>
+    </div>
+         
+           <!--for paragraph--> <div class="par">
+                <h1>Book Title</h1><br>
+                <div class="rating">
+                    <input type="radio" name="rating2" id="star1-2" value="5">
+                    <label for="star1-2" class="star">&#9733;</label>
+                    <input type="radio" name="rating2" id="star2-2" value="4">
+                    <label for="star2-2" class="star">&#9733;</label>
+                    <input type="radio" name="rating2" id="star3-2" value="3">
+                    <label for="star3-2" class="star">&#9733;</label>
+                    <input type="radio" name="rating2" id="star4-2" value="2">
+                    <label for="star4-2" class="star">&#9733;</label>
+                    <input type="radio" name="rating2" id="star5-2" value="1">
+                    <label for="star5-2" class="star">&#9733;</label>
+                </div>
+                <p class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique velit quam nihil cumque eos suscipit mollitia reprehenderit natus perferendis tenetur. Autem architecto nesciunt adipisci ducimus, iusto et mollitia maxime dolorem.</p>
+                <br><br>
+            
+                <ul id="genreList">
+                    <h3 class="genreList">Genres:</h3>
+                    <li>Classic</li>
+                    <li>Fiction</li>
+                    <li>Philosophy</li>
+                    <li>Literature</li>
+                    <li>Novels</li>
+                    <li>France</li>
+                    <!-- Additional genres that will be hidden initially -->
+                    <li class="more" style="display: none;">Science Fiction</li>
+                    <li class="more" style="display: none;">Fantasy</li>
+                    <li class="more" style="display: none;">Historical Fiction</li>
+                    <li id="moreButton" onclick="toggleMore()">..........Show More</li>
+                
+                </ul>
+                
+                
+              
+                
+                <script>
+                    function toggleMore() {
+                        var items = document.querySelectorAll('.more');
+                        var button = document.getElementById('moreButton');
+                        
+                        // Check if the "more" items are currently hidden or shown
+                        if (items[0].style.display === 'none') {
+                            // Show more items
+                            for (var i = 0; i < items.length; i++) {
+                                items[i].style.display = 'list-item';
+                            }
+                            button.innerText = "Show Less"; // Change button text to "Show Less"
+                        } else {
+                            // Hide more items
+                            for (var i = 0; i < items.length; i++) {
+                                items[i].style.display = 'none';
+                            }
+                            button.innerText = "Show More"; // Change button text to "Show More"
+                        }
+                    }
+                </script><br><br>
+                <hr>
+                <hr><br>
+                <h3>About the author</h3>
+                <section> <div class="comment">
+                    <img src="img.jpg" alt="Image" style="width: 80px; height: 80px;border-radius: 50%;"><br><br>
+                    <P><strong>TSERING SHERPA</strong></P>
+                    <button style="width: 100px;background-color:black">FOLLOW</button >
+                </div>
+                <div class="detail">
+                    <div class="rating">
+                        <input type="radio" name="rating2" id="star1-2" value="5">
+                        <label for="star1-2" class="star">&#9733;</label>
+                        <input type="radio" name="rating2" id="star2-2" value="4">
+                        <label for="star2-2" class="star">&#9733;</label>
+                        <input type="radio" name="rating2" id="star3-2" value="3">
+                        <label for="star3-2" class="star">&#9733;</label>
+                        <input type="radio" name="rating2" id="star4-2" value="2">
+                        <label for="star4-2" class="star">&#9733;</label>
+                        <input type="radio" name="rating2" id="star5-2" value="1">
+                        <label for="star5-2" class="star">&#9733;</label>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto facilis magnam temporibus provident dignissimos? Unde, natus earum molestiae eveniet magnam, velit quis quisquam at totam pariatur porro voluptatem reiciendis?
+                    Quasi odio quae, voluptas nemo sit deleniti ut blanditiis autem dicta esse, exercitationem itaque quisquam amet! Possimus repellat ratione modi, sequi quos, ipsa dolor provident molestiae iusto aperiam reprehenderit iure!</p>
+                    
+                </div>
+    
+            </section><br>
+                <hr>
+                <hr><br>
+                <h3><strong style="font-size: 40px;">Rating and Reviews</strong></h3>
+                <div class="review">
+                    <img src="nopic.jpg" alt="" style="border-radius: 50%;"> <br><br>
+                    <h2>What do you think ?</h2>
+                    <div class="rating">
+                        <input type="radio" name="rating2" id="star1-2" value="5">
+                        <label for="star1-2" class="star">&#9733;</label>
+                        <input type="radio" name="rating2" id="star2-2" value="4">
+                        <label for="star2-2" class="star">&#9733;</label>
+                        <input type="radio" name="rating2" id="star3-2" value="3">
+                        <label for="star3-2" class="star">&#9733;</label>
+                        <input type="radio" name="rating2" id="star4-2" value="2">
+                        <label for="star4-2" class="star">&#9733;</label>
+                        <input type="radio" name="rating2" id="star5-2" value="1">
+                        <label for="star5-2" class="star">&#9733;</label>
+                    </div>
+                </div>
+                <hr><hr><br><br>
+                <section> <div class="comment">
+                    <img src="img.jpg" alt="Image" style="width: 80px; height: 80px;border-radius: 50%;"><br><br>
+                    <P><strong>TSERING SHERPA</strong></P>
+                    <button style="width: 100px;background-color:black">FOLLOW</button >
+                </div>
+                <div class="detail">
+                    <div class="rating">
+                        <input type="radio" name="rating2" id="star1-2" value="5">
+                        <label for="star1-2" class="star">&#9733;</label>
+                        <input type="radio" name="rating2" id="star2-2" value="4">
+                        <label for="star2-2" class="star">&#9733;</label>
+                        <input type="radio" name="rating2" id="star3-2" value="3">
+                        <label for="star3-2" class="star">&#9733;</label>
+                        <input type="radio" name="rating2" id="star4-2" value="2">
+                        <label for="star4-2" class="star">&#9733;</label>
+                        <input type="radio" name="rating2" id="star5-2" value="1">
+                        <label for="star5-2" class="star">&#9733;</label>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto facilis magnam temporibus provident dignissimos? Unde, natus earum molestiae eveniet magnam, velit quis quisquam at totam pariatur porro voluptatem reiciendis?
+                    Quasi odio quae, voluptas nemo sit deleniti ut blanditiis autem dicta esse, exercitationem itaque quisquam amet! Possimus repellat ratione modi, sequi quos, ipsa dolor provident molestiae iusto aperiam reprehenderit iure!</p>
+                    <ul id="genreList">
+                       
+                        <li>Classic</li>
+                        <li>Fiction</li>
+                        <li>Philosophy</li>
+                        <li>Literature</li>
+                        <li>Novels</li>
+                        <li>France</li>
+                        <!-- Additional genres that will be hidden initially -->
+                        <li class="more" style="display: none;">Science Fiction</li>
+                        <li class="more" style="display: none;">Fantasy</li>
+                        <li class="more" style="display: none;">Historical Fiction</li>
+                        <li id="moreButton" onclick="toggleMore()">..........Show More</li>
+                    
+                    </ul>
+                </div>
+            </section> <br><hr>
+            <hr><br>
+            <section> <div class="comment">
+                <img src="img.jpg" alt="Image" style="width: 80px; height: 80px;border-radius: 50%;"><br><br>
+                <P><strong>TSERING SHERPA</strong></P>
+                <button style="width: 100px;background-color:black">FOLLOW</button >
+            </div>
+            <div class="detail">
+                <div class="rating">
+                    <input type="radio" name="rating2" id="star1-2" value="5">
+                    <label for="star1-2" class="star">&#9733;</label>
+                    <input type="radio" name="rating2" id="star2-2" value="4">
+                    <label for="star2-2" class="star">&#9733;</label>
+                    <input type="radio" name="rating2" id="star3-2" value="3">
+                    <label for="star3-2" class="star">&#9733;</label>
+                    <input type="radio" name="rating2" id="star4-2" value="2">
+                    <label for="star4-2" class="star">&#9733;</label>
+                    <input type="radio" name="rating2" id="star5-2" value="1">
+                    <label for="star5-2" class="star">&#9733;</label>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto facilis magnam temporibus provident dignissimos? Unde, natus earum molestiae eveniet magnam, velit quis quisquam at totam pariatur porro voluptatem reiciendis?
+                Quasi odio quae, voluptas nemo sit deleniti ut blanditiis autem dicta esse, exercitationem itaque quisquam amet! Possimus repellat ratione modi, sequi quos, ipsa dolor provident molestiae iusto aperiam reprehenderit iure!</p>
+                <ul id="genreList">
+                   
+                    <li>Classic</li>
+                    <li>Fiction</li>
+                    <li>Philosophy</li>
+                    <li>Literature</li>
+                    <li>Novels</li>
+                    <li>France</li>
+                    <!-- Additional genres that will be hidden initially -->
+                    <li class="more" style="display: none;">Science Fiction</li>
+                    <li class="more" style="display: none;">Fantasy</li>
+                    <li class="more" style="display: none;">Historical Fiction</li>
+                    <li id="moreButton" onclick="toggleMore()">..........Show More</li>
+                
+                </ul>
+            </div>
+        </section><br>
+        <hr>
+        <hr>
+        <br><section> <div class="comment">
+            <img src="img.jpg" alt="Image" style="width: 80px; height: 80px;border-radius: 50%;"><br><br>
+            <P><strong>TSERING SHERPA</strong></P>
+            <button style="width: 100px;background-color:black">FOLLOW</button >
+        </div>
+        <div class="detail">
+            <div class="rating">
+                <input type="radio" name="rating2" id="star1-2" value="5">
+                <label for="star1-2" class="star">&#9733;</label>
+                <input type="radio" name="rating2" id="star2-2" value="4">
+                <label for="star2-2" class="star">&#9733;</label>
+                <input type="radio" name="rating2" id="star3-2" value="3">
+                <label for="star3-2" class="star">&#9733;</label>
+                <input type="radio" name="rating2" id="star4-2" value="2">
+                <label for="star4-2" class="star">&#9733;</label>
+                <input type="radio" name="rating2" id="star5-2" value="1">
+                <label for="star5-2" class="star">&#9733;</label>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto facilis magnam temporibus provident dignissimos? Unde, natus earum molestiae eveniet magnam, velit quis quisquam at totam pariatur porro voluptatem reiciendis?
+            Quasi odio quae, voluptas nemo sit deleniti ut blanditiis autem dicta esse, exercitationem itaque quisquam amet! Possimus repellat ratione modi, sequi quos, ipsa dolor provident molestiae iusto aperiam reprehenderit iure!</p>
+            <ul id="genreList">
+               
+                <li>Classic</li>
+                <li>Fiction</li>
+                <li>Philosophy</li>
+                <li>Literature</li>
+                <li>Novels</li>
+                <li>France</li>
+                <!-- Additional genres that will be hidden initially -->
+                <li class="more" style="display: none;">Science Fiction</li>
+                <li class="more" style="display: none;">Fantasy</li>
+                <li class="more" style="display: none;">Historical Fiction</li>
+                <li id="moreButton" onclick="toggleMore()">..........Show More</li>
+            
+            </ul>
+        </div>
+    </section><br><hr>
+    <hr><br><br><section> 
+        <div class="comment">
+        <img src="img.jpg" alt="Image" style="width: 80px; height: 80px;border-radius: 50%;"><br><br>
+        <P><strong>TSERING SHERPA</strong></P>
+        <button style="width: 100px;background-color:black">FOLLOW</button >
+    </div>
+    <div class="detail">
+        <div class="rating">
+            <input type="radio" name="rating2" id="star1-2" value="5">
+            <label for="star1-2" class="star">&#9733;</label>
+            <input type="radio" name="rating2" id="star2-2" value="4">
+            <label for="star2-2" class="star">&#9733;</label>
+            <input type="radio" name="rating2" id="star3-2" value="3">
+            <label for="star3-2" class="star">&#9733;</label>
+            <input type="radio" name="rating2" id="star4-2" value="2">
+            <label for="star4-2" class="star">&#9733;</label>
+            <input type="radio" name="rating2" id="star5-2" value="1">
+            <label for="star5-2" class="star">&#9733;</label>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto facilis magnam temporibus provident dignissimos? Unde, natus earum molestiae eveniet magnam, velit quis quisquam at totam pariatur porro voluptatem reiciendis?
+        Quasi odio quae, voluptas nemo sit deleniti ut blanditiis autem dicta esse, exercitationem itaque quisquam amet! Possimus repellat ratione modi, sequi quos, ipsa dolor provident molestiae iusto aperiam reprehenderit iure!</p>
+        <ul id="genreList">
+           
+            <li>Classic</li>
+            <li>Fiction</li>
+            <li>Philosophy</li>
+            <li>Literature</li>
+            <li>Novels</li>
+            <li>France</li>
+            <!-- Additional genres that will be hidden initially -->
+            <li class="more" style="display: none;">Science Fiction</li>
+            <li class="more" style="display: none;">Fantasy</li>
+            <li class="more" style="display: none;">Historical Fiction</li>
+            <li id="moreButton" onclick="toggleMore()">..........Show More</li>
+        
+        </ul>
+    </div>
+</section><br><hr>
+<hr><br>
+<section> <div class="comment">
+    <img src="img.jpg" alt="Image" style="width: 80px; height: 80px;border-radius: 50%;"><br><br>
+    <P><strong>TSERING SHERPA</strong></P>
+    <button style="width: 100px;background-color:black">FOLLOW</button >
+</div>
+<div class="detail">
+    <div class="rating">
+        <input type="radio" name="rating2" id="star1-2" value="5">
+        <label for="star1-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star2-2" value="4">
+        <label for="star2-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star3-2" value="3">
+        <label for="star3-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star4-2" value="2">
+        <label for="star4-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star5-2" value="1">
+        <label for="star5-2" class="star">&#9733;</label>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto facilis magnam temporibus provident dignissimos? Unde, natus earum molestiae eveniet magnam, velit quis quisquam at totam pariatur porro voluptatem reiciendis?
+    Quasi odio quae, voluptas nemo sit deleniti ut blanditiis autem dicta esse, exercitationem itaque quisquam amet! Possimus repellat ratione modi, sequi quos, ipsa dolor provident molestiae iusto aperiam reprehenderit iure!</p>
+    <ul id="genreList">
+       
+        <li>Classic</li>
+        <li>Fiction</li>
+        <li>Philosophy</li>
+        <li>Literature</li>
+        <li>Novels</li>
+        <li>France</li>
+        <!-- Additional genres that will be hidden initially -->
+        <li class="more" style="display: none;">Science Fiction</li>
+        <li class="more" style="display: none;">Fantasy</li>
+        <li class="more" style="display: none;">Historical Fiction</li>
+        <li id="moreButton" onclick="toggleMore()">..........Show More</li>
+    
+    </ul>
+</div>
+</section><br><hr>
+<hr><br>
+<section> <div class="comment">
+    <img src="img.jpg" alt="Image" style="width: 80px; height: 80px;border-radius: 50%;"><br><br>
+    <P><strong>TSERING SHERPA</strong></P>
+    <button style="width: 100px;background-color:black">FOLLOW</button >
+</div>
+<div class="detail">
+    <div class="rating">
+        <input type="radio" name="rating2" id="star1-2" value="5">
+        <label for="star1-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star2-2" value="4">
+        <label for="star2-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star3-2" value="3">
+        <label for="star3-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star4-2" value="2">
+        <label for="star4-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star5-2" value="1">
+        <label for="star5-2" class="star">&#9733;</label>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto facilis magnam temporibus provident dignissimos? Unde, natus earum molestiae eveniet magnam, velit quis quisquam at totam pariatur porro voluptatem reiciendis?
+    Quasi odio quae, voluptas nemo sit deleniti ut blanditiis autem dicta esse, exercitationem itaque quisquam amet! Possimus repellat ratione modi, sequi quos, ipsa dolor provident molestiae iusto aperiam reprehenderit iure!</p>
+    <ul id="genreList">
+       
+        <li>Classic</li>
+        <li>Fiction</li>
+        <li>Philosophy</li>
+        <li>Literature</li>
+        <li>Novels</li>
+        <li>France</li>
+        <!-- Additional genres that will be hidden initially -->
+        <li class="more" style="display: none;">Science Fiction</li>
+        <li class="more" style="display: none;">Fantasy</li>
+        <li class="more" style="display: none;">Historical Fiction</li>
+        <li id="moreButton" onclick="toggleMore()">..........Show More</li>
+    
+    </ul>
+</div>
+</section><br><hr>
+<hr><br>
+<section> <div class="comment">
+    <img src="img.jpg" alt="Image" style="width: 80px; height: 80px;border-radius: 50%;"><br><br>
+    <P><strong>TSERING SHERPA</strong></P>
+    <button style="width: 100px;background-color:black">FOLLOW</button >
+</div>
+<div class="detail">
+    <div class="rating">
+        <input type="radio" name="rating2" id="star1-2" value="5">
+        <label for="star1-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star2-2" value="4">
+        <label for="star2-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star3-2" value="3">
+        <label for="star3-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star4-2" value="2">
+        <label for="star4-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star5-2" value="1">
+        <label for="star5-2" class="star">&#9733;</label>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto facilis magnam temporibus provident dignissimos? Unde, natus earum molestiae eveniet magnam, velit quis quisquam at totam pariatur porro voluptatem reiciendis?
+    Quasi odio quae, voluptas nemo sit deleniti ut blanditiis autem dicta esse, exercitationem itaque quisquam amet! Possimus repellat ratione modi, sequi quos, ipsa dolor provident molestiae iusto aperiam reprehenderit iure!</p>
+    <ul id="genreList">
+       
+        <li>Classic</li>
+        <li>Fiction</li>
+        <li>Philosophy</li>
+        <li>Literature</li>
+        <li>Novels</li>
+        <li>France</li>
+        <!-- Additional genres that will be hidden initially -->
+        <li class="more" style="display: none;">Science Fiction</li>
+        <li class="more" style="display: none;">Fantasy</li>
+        <li class="more" style="display: none;">Historical Fiction</li>
+        <li id="moreButton" onclick="toggleMore()">..........Show More</li>
+    
+    </ul>
+</div><br>
+</section><br><hr>
+<hr><br>
+
+<section> <div class="comment">
+    <img src="img.jpg" alt="Image" style="width: 80px; height: 80px;border-radius: 50%;"><br><br>
+    <P><strong>TSERING SHERPA</strong></P>
+    <button style="width: 100px;background-color:black">FOLLOW</button >
+</div>
+<div class="detail">
+    <div class="rating">
+        <input type="radio" name="rating2" id="star1-2" value="5">
+        <label for="star1-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star2-2" value="4">
+        <label for="star2-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star3-2" value="3">
+        <label for="star3-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star4-2" value="2">
+        <label for="star4-2" class="star">&#9733;</label>
+        <input type="radio" name="rating2" id="star5-2" value="1">
+        <label for="star5-2" class="star">&#9733;</label>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iusto facilis magnam temporibus provident dignissimos? Unde, natus earum molestiae eveniet magnam, velit quis quisquam at totam pariatur porro voluptatem reiciendis?
+    Quasi odio quae, voluptas nemo sit deleniti ut blanditiis autem dicta esse, exercitationem itaque quisquam amet! Possimus repellat ratione modi, sequi quos, ipsa dolor provident molestiae iusto aperiam reprehenderit iure!</p>
+    <ul id="genreList">
+       
+        <li>Classic</li>
+        <li>Fiction</li>
+        <li>Philosophy</li>
+        <li>Literature</li>
+        <li>Novels</li>
+        <li>France</li>
+        <!-- Additional genres that will be hidden initially -->
+        <li class="more" style="display: none;">Science Fiction</li>
+        <li class="more" style="display: none;">Fantasy</li>
+        <li class="more" style="display: none;">Historical Fiction</li>
+        <li id="moreButton" onclick="toggleMore()">..........Show More</li>
+    
+    </ul>
+</div>
+</section>        
+                
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

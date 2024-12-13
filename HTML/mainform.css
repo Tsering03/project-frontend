@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    place-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    
+    background-image:url(back.jpg);
+}
+form {
+    
+    border: 1px solid #131212;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #b6bb0d8d;
+    
+}
+#name{
+    width: 400px;
+}

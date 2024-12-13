@@ -3,8 +3,8 @@
     padding: 0;
 }
 .container{
-    width: 100%;
-    background: #ddc8c8;
+   /* width: 100%;
+    display:inline;*/
  }
  .nav{
      height: 39px;
@@ -49,13 +49,15 @@
  .search button:hover{
      background-color: rgb(33, 2, 2);
  }
- body {
+ body{
+    background-color: #196015;
     font-family: Arial, sans-serif;
+    width: 100%;
 }
 
 .rating {
     direction: rtl; /* Right to left for easier styling */
-    display: inline-block;
+    display: inline;
 }
 
 .rating input {
@@ -77,26 +79,25 @@
     color: gold; /* Change color on hover */
 }
 .main{
-    width: 100%;
-    background-color: rgb(195, 192, 192);
-    display: flex;
+    width:100%;
+    background-color: rgb(229, 242, 242);
+    display:flex;
+    gap: 102px;0%;
 }
 .lsub {
-    width:65%;
-    padding-left:60px;
-    padding-top: 20px;
-    border-color: aqua;
-    display: block;
+  width:100%;*/
+  
+     
 
     
 }
 img{
     border-radius:30px;
-     width: 60%;
+     width: 50%;
 }
 
 button {
-    width: 60%;
+    width: 50%;
     height: 50px;
     border-radius:39px;
     margin-left: 1px;
@@ -108,16 +109,79 @@ button {
 
 }
 .rating{
-    margin-left: 50px;
+    align-items: center;
+    text-align: center;
 }
 .par{
 
-    margin-left: 305px;
-    background-color: rgb(162, 163, 163);
-    padding-bottom: 10px;
-    padding: 50px;
+    background-color: rgb(229, 242, 242);
+    display:inline-block;
+    padding-top: 8px;
+    margin-right: 100px;
+   width: 100%;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,;
+    
 }
-h3:hover{
+li:hover{
     text-decoration:underline;
 
 }
+#genreList{
+display:flex;
+}
+.h3{
+    
+    text-align: start;
+}
+.more{
+
+    list-style: none;
+}
+
+.lmain{
+   width: 100%;
+    height: auto;
+  padding-left :100px;
+    padding-top: 100px;
+    border-color: rgb(229, 242, 242);
+    display:inline-block;
+    align-items: center;
+    text-align: center;
+    grid-column: span;
+position: inherit;
+
+}
+
+
+.profile-pic {
+    width: 100px;
+    height:100px;
+    border-radius:50%;
+   object-fit: cover;
+    margin-left: 15px;
+    display:block;
+}
+
+
+img{
+margin-left:20px;
+width: 100px;
+width: 100px;
+border-radius: 50;
+justify-content: center;
+align-items: center;*/
+}
+.review{
+    
+    align-items: center;
+    text-align: center;
+
+}
+.nam{
+    width: 100%;
+}
+section{
+    display:flex;
+    gap: 40px;
+}
+

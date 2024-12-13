@@ -66,5 +66,11 @@ box-shadow: 0 0 128px 0  rgb(0,0,0,0.1),;
 width: 100%;
 }
 .links{
-    margin-bottom: 15px;
+   text-align: center;
+}
+.or{
+   text-align: center; 
+}
+.pass{
+    text-align: center;
 }

@@ -1,0 +1,32 @@
+
+body{
+    background-color: aqua;
+    height:100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
+    }
+    .top {
+    color: blue;
+    border-radius: 10px;
+        width:500px;
+        height:500px;
+        display: flex;
+        justify-content: center;
+       border: 2px solid black;
+
+    }
+    .main{
+  width: 20vh;
+  height: 40vh;
+    justify-content: center;
+    display:inline;
+   align-items: center;
+   padding-top: 10%;
+    }
+    button{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
