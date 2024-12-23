@@ -9,7 +9,7 @@ header{
     font-family:  sans-serif;
 }
 body{
-    background: #96a138c6;
+    background: #F5DEB3;
 }
 .container{
     display: flex;
@@ -18,7 +18,7 @@ body{
     min-height: 90vh;
 }
 .box{
-    background: #c5d178;
+    background: #d0a77f;
     display: flex;
 flex-direction: column;
 padding: 25px;

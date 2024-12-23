@@ -1,19 +1,33 @@
 body {
-    display: grid;
+   display: grid;
     place-items: center; 
     height: 100vh; 
     margin: 0; 
-    
+    background-color: #F5DEB3;
     background-image:url(back.jpg);
 }
 form {
     
-    border: 1px solid #131212;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #b6bb0d8d;
+    border: 2px solid #131212;
+    padding: 50px;
+    border-radius: 16px;
+
+    width: 400px;
     
 }
-#name{
-    width: 400px;
+
+
+h2{
+    
+    text-align: center;
+}
+input,textarea{
+    width: 350px;
+
+}
+button{
+    width: 150px;
+    justify-content: center;
+    border-radius: 6%;
+    background-color: rgb(152, 152, 172);
 }
